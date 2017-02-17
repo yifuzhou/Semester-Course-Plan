@@ -1,0 +1,26 @@
+@author Yifu Zhou
+It is a semester plan system that helps you arrange courses schedule and mininize time of graduation.
+Example:
+input
+<total number of courses>
+<maximum number of courses you can learn each semester>
+<course name1> <course name2> <..> ...
+<course name1> <open semester(S,F,B)> <number of pre-require courses> <pre-require courses name> <..> ...
+<course name2> <..> ... 
+...
+-1 -1 
+
+Test:
+5
+3
+ComS101 ComS102 ComS103 ComS201 ComS301
+ComS101 F 0
+ComS102 F 0
+ComS103 S 0
+ComS201 S 2 ComS101 ComS102
+COmS301 F 2 ComS201 ComS103
+-1
+-1
+
+key point:
+1. How to arrange courses if it exceeds the maximum number of courses you can learn each semester.
