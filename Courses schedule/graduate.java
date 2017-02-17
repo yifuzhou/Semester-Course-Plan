@@ -1,4 +1,3 @@
-package hw01;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -34,11 +33,13 @@ public class graduate {
 				//    data.remove(n);
 				}
 			}
+			// if can be selected courses <= than maximum, do topological sorting
 			if(j<=max_Num)
 			{
 				deleteSemester(Array[i]);
 				i++;
 			}
+			//else need to compare each possibilies
 			if(j>max_Num)
 			{
 				int rows = combinationNum(j, max_Num);
@@ -164,7 +165,7 @@ public class graduate {
 		
 				for(int p = 0;p<total_Num;p++)
 				{
-					String set = scanner.next();
+					String temp_name = scanner.next();
 				}
 				for(int p = 0;p<total_Num;p++)
 				{
